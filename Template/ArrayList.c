@@ -260,7 +260,7 @@ int al_push(ArrayList* this, int index, void* pElement)
     if(this != NULL && pElement != NULL){
         if(index >0 && index < al_len(this)){
             resizeUp(this);
-            void* auxElement = al_get(this, index);
+            //void* auxElement = al_get(this, index);
             int i;
             this->size++;
             for(i=al_len(this);i>index;i--){
@@ -514,9 +514,9 @@ int al_map(ArrayList* this, int (*pFunc)(void*)){
     int returnAux = -2;
     if(this != NULL && pFunc != NULL){
         int i;
-        int pFuncStatus;
+        int pFuncStatus = 0;
         for(i=0;i<al_len(this);i++){
-            pFunc(al_get(this, i));
+            pFuncStatus = pFunc(al_get(this, i));
         }
         if(pFuncStatus == -1){
             returnAux = -1;

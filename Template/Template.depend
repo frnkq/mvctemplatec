@@ -73,3 +73,90 @@
 1532908950 /home/frnkq/Documents/Programming/PracticaFinal/Template/Persistor.h
 	"ArrayList.h"
 
+1532946229 source:c:\users\franco.e.canevali\documents\cb\applications\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1532946229 c:\users\franco.e.canevali\documents\cb\applications\arraylist.h
+
+1532946229 source:c:\users\franco.e.canevali\documents\cb\applications\controller.c
+	"Controller.h"
+	"View.h"
+	"Model.h"
+
+1532946229 c:\users\franco.e.canevali\documents\cb\applications\controller.h
+
+1532946229 c:\users\franco.e.canevali\documents\cb\applications\view.h
+
+1532962664 c:\users\franco.e.canevali\documents\cb\applications\model.h
+	"ArrayList.h"
+
+1532946229 source:c:\users\franco.e.canevali\documents\cb\applications\fcgetinputs.c
+	"fcgetInputs.h"
+	"fcUtilities.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<limits.h>
+
+1532946229 c:\users\franco.e.canevali\documents\cb\applications\fcgetinputs.h
+
+1532946229 c:\users\franco.e.canevali\documents\cb\applications\fcutilities.h
+	<stdlib.h>
+
+1532946229 source:c:\users\franco.e.canevali\documents\cb\applications\fcutilities.c
+	"fcUtilities.h"
+	<stdio.h>
+	<stdlib.h>
+
+1532946229 source:c:\users\franco.e.canevali\documents\cb\applications\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Controller.h"
+
+1532962299 source:c:\users\franco.e.canevali\documents\cb\applications\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"Parser.h"
+
+1532952097 c:\users\franco.e.canevali\documents\cb\applications\parser.h
+	"ArrayList.h"
+
+1532958837 c:\users\franco.e.canevali\documents\cb\applications\person.h
+	<stdio.h>
+	<stdlib.h>
+
+1532962726 source:c:\users\franco.e.canevali\documents\cb\applications\persistor.c
+	<stdio.h>
+	<stdlib.h>
+	"Model.h"
+	"Persistor.h"
+
+1532962689 c:\users\franco.e.canevali\documents\cb\applications\persistor.h
+	"ArrayList.h"
+
+1532962672 source:c:\users\franco.e.canevali\documents\cb\applications\model.c
+	<stdio.h>
+	<stdlib.h>
+	"Model.h"
+	"ArrayList.h"
+	"Persistor.h"
+
+1532961444 source:c:\users\franco.e.canevali\documents\cb\applications\view.c
+	<stdio.h>
+	<stdlib.h>
+	"View.h"
+	"fcgetInputs.h"
+	"fcUtilities.h"
+	"Model.h"
+	"Parser.h"
+
+1532958809 source:c:\users\franco.e.canevali\documents\cb\applications\person.c
+	"Person.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

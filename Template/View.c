@@ -4,6 +4,12 @@
 #include "View.h"
 #include "fcgetInputs.h"
 #include "fcUtilities.h"
+#include "Model.h"
+#include "Parser.h"
+
+
+//#include "Person.h"
+
 
 void view_init(){
   char salir = 'n';
@@ -12,11 +18,9 @@ void view_init(){
       int opcion = view_askOption();
       switch(opcion){
       case 1:
-        //solo llamar funciones
         break;
 
       case 2:
-        //solo llamar funciones
         break;
 
       case 3:
@@ -39,9 +43,9 @@ void view_kill(){
 void view_printMainMenu(){
   char menu[] = "\nMenu\n";
   char separator[] = "------------";
-  char opcion1[] = "1-";
-  char opcion2[] = "2-";
-  char opcion3[] = "3-";
+  char opcion1[] = "1-Separar archivo data.csv en hombres.csv y mujeres.csv";
+  char opcion2[] = "2-Hacer un blacklists de mails '.ru' y guardar una copia de data.csv sin ellos";
+  char opcion3[] = "3-Crear un whitelist de mails '.com' ";
   char opcion4[] = "4- Salir";
   fprintf(stdout, "%s\n%s\n%s\n%s\n%s\n%s",
           menu, separator, opcion1, opcion2, opcion3, opcion4);

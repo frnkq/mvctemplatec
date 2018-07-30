@@ -2,6 +2,6 @@
 #define PARSER_H_INCLUDED
 
 #include "ArrayList.h"
-int parser_parseX(ArrayList* arrayList, char* fileName);
+int parser_parsePersons(ArrayList* persons, char* fileName);
 
 #endif // PARSER_H_INCLUDED

@@ -2,31 +2,41 @@
 #include <stdlib.h>
 #include "Parser.h"
 
-int parser_parseX(ArrayList* arrayList, char* fileName){
-  int returnAux;
+
+//#include "Person.h"
+
+int parser_parseEntities(ArrayList* arrayList, char* fileName){
+  int returnAux = -1;
   if(arrayList != NULL && fileName != NULL){
     FILE* file = fopen(fileName, "r");
     if(file != NULL){
-      //Entity* entity;
-      //buffer variables
-      //char b1[256];
-      //char b2[256];
+        //Person* person;
+        //char id[256];
+        //char firstName[256];
+        //char lastName[256];
 
       //disregard first line
-      //fscanf(file, "[^,],[^,\n]\n", b1, b2);
-
+      //fscanf(file, "%[^,],%[^,],%[^,\n]\n", id,firstName,lastName);
       do{
-        //fscanf(file, "[^,],[^,\n]\n", b1, b2);
-        //entity = entity_new();
-        //entity_setB1(entity, b1);
-        //entity_setB2(entity, b2);
-        //al_add(arrayList, entity);
-        returnAux = 1;
+         int read = 6;//fscanf(file, "%[^,],%[^,],%[^,\n]\n", id,firstName,lastName);
+
+        if(read==6){
+            //entity = Entity_new();
+            //Person_setId(person, idInt);
+            //Person_setFirstName(person, firstName);
+            //Person_setLastName(person, lastName);
+            //al_add(arrayList, entity);
+            returnAux = 1;
+        }else{
+            returnAux = -1;
+            printf("\nHubo un error leyendo el archivo");
+            break;
+        }
       }while(feof(file)==0);
+      fclose(file);
     }else{
       printf("\n\nERROR: el archivo %s no existe", fileName);
     }
   }
-
   return returnAux;
 }
