@@ -96,7 +96,8 @@ void* al_get(ArrayList* this , int index);
  *                  - ( 1) if this list contains at least one element pElement
  *
  */
-int al_contains(ArrayList* this, void* pElement);
+//int al_contains(ArrayList* this, void* pElement);
+int al_contains(ArrayList* this, void* pElement, int (*pFunc)(void*, void*));
 
 
 /** \brief  Set a element in pList at index position
@@ -192,7 +193,8 @@ ArrayList* al_subList(ArrayList* this,int from,int to);
  * \return int Return (-1) if Error [pList or pList2 are NULL pointer]
  *                  - (0) if Not contains All - (1) if is contains All
  */
-int al_containsAll(ArrayList* this,ArrayList* this2);
+//int al_containsAll(ArrayList* this,ArrayList* this2);
+int al_containsAll(ArrayList* this, ArrayList* this2, int (*pFunc)(void*, void*) );
 
 
 /** \brief Sorts objects of list, use compare pFunc

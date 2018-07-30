@@ -137,6 +137,7 @@ void* al_get(ArrayList* this, int index)
  *                  - ( 1) if this list contains at least one element pElement
  *
  */
+ /*
 int al_contains(ArrayList* this, void* pElement)
 {
     int returnAux = -1;
@@ -154,7 +155,21 @@ int al_contains(ArrayList* this, void* pElement)
 
     return returnAux;
 }
-
+*/
+int al_contains(ArrayList* this, void* pElement, int (*pFunc)(void*, void*)){
+    int returnAux = -1;
+    if(this != NULL && pElement != NULL && pFunc != NULL){
+        int i;
+        for(i=0;i<al_len(this);i++){
+            if(pFunc(pElement, al_get(this, i))==0){
+                returnAux = al_indexOf(this, al_get(this, i));
+                i = al_len(this);
+                break;
+            }
+        }
+    }
+    return returnAux;
+}
 
 /** \brief  Set a element in pList at index position
  * \param pList ArrayList* Pointer to arrayList
@@ -390,7 +405,7 @@ ArrayList* al_subList(ArrayList* this,int from,int to)
  * \return int Return (-1) if Error [pList or pList2 are NULL pointer]
  *                  - (0) if Not contains All - (1) if is contains All
  */
-int al_containsAll(ArrayList* this,ArrayList* this2)
+int al_containsAll(ArrayList* this,ArrayList* this2, int (*pFunc)(void*, void*))
 {
     int returnAux = -1;
 
@@ -398,7 +413,7 @@ int al_containsAll(ArrayList* this,ArrayList* this2)
         if(al_len(this2) >= al_len(this)){
             int i;
             for(i=0;i<al_len(this2);i++){
-                int contains = al_contains(this, this2->pElements[i]);
+                int contains = al_contains(this, this2->pElements[i], pFunc);
                 if(contains == -1 ){
                    returnAux = 0;
                    break;
