@@ -1,0 +1,75 @@
+# depslib dependency file v1.0
+1532840161 source:/home/frnkq/Documents/Programming/PracticaFinal/Template/ArrayList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1532840161 /home/frnkq/Documents/Programming/PracticaFinal/Template/ArrayList.h
+
+1532840960 source:/home/frnkq/Documents/Programming/PracticaFinal/Template/fcgetInputs.c
+	"fcgetInputs.h"
+	"fcUtilities.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<limits.h>
+
+1532840161 /home/frnkq/Documents/Programming/PracticaFinal/Template/fcgetInputs.h
+
+1532840161 /home/frnkq/Documents/Programming/PracticaFinal/Template/fcUtilities.h
+	<stdlib.h>
+
+1532840161 source:/home/frnkq/Documents/Programming/PracticaFinal/Template/fcUtilities.c
+	"fcUtilities.h"
+	<stdio.h>
+	<stdlib.h>
+
+1532908613 source:/home/frnkq/Documents/Programming/PracticaFinal/Template/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1532908967 source:/home/frnkq/Documents/Programming/PracticaFinal/Template/Model.c
+	<stdio.h>
+	<stdlib.h>
+	"Model.h"
+	"ArrayList.h"
+	"Persistor.h"
+
+1532907573 /home/frnkq/Documents/Programming/PracticaFinal/Template/Model.h
+	"ArrayList.h"
+
+1532908888 source:/home/frnkq/Documents/Programming/PracticaFinal/Template/View.c
+	<stdio.h>
+	<stdlib.h>
+	"View.h"
+	"fcgetInputs.h"
+	"fcUtilities.h"
+
+1532907465 /home/frnkq/Documents/Programming/PracticaFinal/Template/View.h
+
+1532907670 source:/home/frnkq/Documents/Programming/PracticaFinal/Template/Controller.c
+	"Controller.h"
+	"View.h"
+	"Model.h"
+
+1532907630 /home/frnkq/Documents/Programming/PracticaFinal/Template/Controller.h
+
+1532908933 source:/home/frnkq/Documents/Programming/PracticaFinal/Template/Parser.c
+	<stdio.h>
+	<stdlib.h>
+	"Parser.h"
+
+1532908270 /home/frnkq/Documents/Programming/PracticaFinal/Template/Parser.h
+	"ArrayList.h"
+
+1532908981 source:/home/frnkq/Documents/Programming/PracticaFinal/Template/Persistor.c
+	<stdio.h>
+	<stdlib.h>
+	"Model.h"
+	"Persistor.h"
+
+1532908950 /home/frnkq/Documents/Programming/PracticaFinal/Template/Persistor.h
+	"ArrayList.h"
+
