@@ -51,10 +51,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Persistor.h" />
-		<Unit filename="Person.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Person.h" />
 		<Unit filename="View.c">
 			<Option compilerVar="CC" />
 		</Unit>
